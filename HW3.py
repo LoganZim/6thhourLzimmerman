@@ -1,3 +1,9 @@
+#logan zimmerman
+#6 hour
+#HW3
+
+
+
 print('hello world')
 list =  ['dom', 'rob', 'logan', 'nick', 'patt']
 list.append(input('enter your name: '))
