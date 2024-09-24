@@ -45,7 +45,9 @@ d=input('do you want to change the stats of an enemy? : ')
 
 if d == 'yes':
     enemyDict[input("ok, what enemy do you want to change: ")][input('what is the quality you want to change: ')] = [int(input('ok, enter the changed value:'))]
+
 print(enemyDict)
+
 
 if d == 'no':
     print("ok.")
