@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added scenario1">
-      <change afterPath="$PROJECT_DIR$/myFunFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenario2.py" afterDir="false" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added scenario2">
+      <change afterPath="$PROJECT_DIR$/HW5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scenario1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myFunFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/myFunFile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +52,7 @@
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
     "Python._pydev_execfile.executor": "Run",
     "Python.myFunFile.executor": "Run",
     "Python.playground.executor": "Run",
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726598583052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added scenario2">
+      <option name="closed" value="true" />
+      <created>1727204570886</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727204570886</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +173,7 @@
     <MESSAGE value="added HW3" />
     <MESSAGE value="added HW4" />
     <MESSAGE value="added scenario1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added scenario1" />
+    <MESSAGE value="added scenario2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added scenario2" />
   </component>
 </project>
