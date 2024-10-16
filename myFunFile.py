@@ -220,46 +220,43 @@ while True:
                                 print('Cx / y = z * Cx')
                             if c == 'division':
                                 print('Cx / y = z / Cx')
-                if m == 'no':
-                    print('Cx * y = z * x')
-                    w = input('what is the left side opperation(addition, subtraction, multiplication, or division):')
-                    if w == 'addition':
-                        print('Cx + y = z * x')
-                        c = input(
-                            'what is the right side opperation(addition, subtraction, multiplication, or division):')
-                        if c == 'addition':
-                            print('Cx + y = z + x')
-                        if c == 'subtraction':
-                            print('Cx + y = z - x')
-                        if c == 'multiplication':
+                    if m == 'no':
+                        print('Cx * y = z * x')
+                        w = input('what is the left side opperation(addition, subtraction, multiplication, or division):')
+                        if w == 'addition':
                             print('Cx + y = z * x')
-                        if c == 'division':
-                            print('Cx + y = z / x')
+                            c = input('what is the right side opperation(addition, subtraction, multiplication, or division):')
+                            if c == 'addition':
+                                print('Cx + y = z + x')
+                            if c == 'subtraction':
+                                print('Cx + y = z - x')
+                            if c == 'multiplication':
+                                print('Cx + y = z * x')
+                            if c == 'division':
+                                print('Cx + y = z / x')
 
-                    if w == 'subtraction':
-                        print('Cx - y = z * x')
-                        c = input(
-                            'what is the right side opperation(addition, subtraction, multiplication, or division):')
-                        if c == 'addition':
-                            print('Cx - y = z + x')
-                        if c == 'subtraction':
-                            print('Cx - y = z - x')
-                        if c == 'multiplication':
+                        if w == 'subtraction':
                             print('Cx - y = z * x')
-                        if c == 'division':
-                            print('Cx - y = z / x')
+                            c = input('what is the right side opperation(addition, subtraction, multiplication, or division):')
+                            if c == 'addition':
+                                print('Cx - y = z + x')
+                            if c == 'subtraction':
+                                print('Cx - y = z - x')
+                            if c == 'multiplication':
+                                print('Cx - y = z * x')
+                            if c == 'division':
+                                print('Cx - y = z / x')
 
-                    if w == 'multiplication':
-                        c = input(
-                            'what is the right side opperation(addition, subtraction, multiplication, or division):')
-                        if c == 'addition':
-                            print('Cx * y = z + x')
-                        if c == 'subtraction':
-                            print('Cx * y = z - x')
-                        if c == 'multiplication':
-                            print('Cx * y = z * x')
-                        if c == 'division':
-                            print('Cx * y = z / x')
+                        if w == 'multiplication':
+                            c = input('what is the right side opperation(addition, subtraction, multiplication, or division):')
+                            if c == 'addition':
+                                print('Cx * y = z + x')
+                            if c == 'subtraction':
+                                print('Cx * y = z - x')
+                            if c == 'multiplication':
+                                print('Cx * y = z * x')
+                            if c == 'division':
+                                print('Cx * y = z / x')
 
                     if w == 'division':
                         c = input(
@@ -833,7 +830,7 @@ while True:
                         if c == 'division':
                             print('y / x = z / x')
 
-            if f == xz:
+            if f == 'xz':
                 print('y * x = x * z')
                 d = input('does the left side x have a coefficient: ')
                 if d == 'yes':

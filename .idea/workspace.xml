@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW6">
-      <change afterPath="$PROJECT_DIR$/HW7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scenario3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scen3.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/testingPY.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW5.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW5.py" afterDir="false" />
@@ -57,10 +58,14 @@
     "Python.HW5.executor": "Run",
     "Python.HW6.executor": "Run",
     "Python.HW7.executor": "Run",
+    "Python.Scenario3.executor": "Run",
+    "Python.Scenario_3.executor": "Run",
     "Python._pydev_execfile.executor": "Run",
     "Python.myFunFile.executor": "Run",
     "Python.playground.executor": "Run",
     "Python.playground2.executor": "Run",
+    "Python.random.executor": "Run",
+    "Python.scen3.executor": "Run",
     "Python.scenario1.executor": "Run",
     "Python.scenario2.executor": "Run",
     "Python.testingPY.executor": "Run",
@@ -68,35 +73,6 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="playground2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="6thhourLzimmerman" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playground2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.playground2" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
