@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW12">
-      <change afterPath="$PROJECT_DIR$/HW13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW14.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW13 and 14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW11.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW11.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,39 +47,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.HW1.executor": "Run",
-    "Python.HW10.executor": "Run",
-    "Python.HW11.executor": "Run",
-    "Python.HW12.executor": "Run",
-    "Python.HW13.executor": "Run",
-    "Python.HW14.executor": "Run",
-    "Python.HW2.executor": "Run",
-    "Python.HW3.executor": "Run",
-    "Python.HW4.executor": "Run",
-    "Python.HW5.executor": "Run",
-    "Python.HW6.executor": "Run",
-    "Python.HW7.executor": "Run",
-    "Python.HW8.executor": "Run",
-    "Python.HW9.executor": "Run",
-    "Python.Scenario 4.executor": "Run",
-    "Python.Scenario3.executor": "Run",
-    "Python.Scenario_3.executor": "Run",
-    "Python._pydev_execfile.executor": "Run",
-    "Python.i.executor": "Run",
-    "Python.myFunFile.executor": "Run",
-    "Python.playground.executor": "Run",
-    "Python.playground2.executor": "Run",
-    "Python.random.executor": "Run",
-    "Python.scen3.executor": "Run",
-    "Python.scenario1.executor": "Run",
-    "Python.scenario2.executor": "Run",
-    "Python.testingPY.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.i.executor&quot;: &quot;Run&quot;,
+    &quot;Python.myFunFile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.playground2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scen3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scenario1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scenario2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testingPY.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -234,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731353485076</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added HW13 and 14">
+      <option name="closed" value="true" />
+      <created>1732044580145</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732044580145</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -251,6 +257,7 @@
     <MESSAGE value="added HW10" />
     <MESSAGE value="added HW11" />
     <MESSAGE value="added HW12" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW12" />
+    <MESSAGE value="added HW13 and 14" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW13 and 14" />
   </component>
 </project>
