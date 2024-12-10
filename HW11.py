@@ -15,9 +15,12 @@ while i < 100:
     time.sleep(0.5)
     print(i)
     if i % 3==0 and i % 5==0:
+        i += 1
         print("FizzBuzz")
     elif i % 5==0:
+        i += 1
         print('Buzz')
     elif i % 3 == 0:
+        i += 1
         print('Fizz')
     i += 1
