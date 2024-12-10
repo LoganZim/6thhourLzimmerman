@@ -25,17 +25,21 @@
 #you feel is necessary to complete your concept. You will be graded based on how those ideas are
 #implemented together.
 numlist = []
-
+oddnumb = 0
+evennum = 0
 for i in range (1,10):
     x = int(input('enter an integer:'))
     if x % 2 == 0:
         print("it is a even number")
         numlist.append(x)
+        evennum += 1
     else:
         print("your number is odd pict another number")
         numlist.append(x)
+        oddnumb += 1
     if len(numlist) ==5 :
         break
 
 print(numlist)
-
+print("there are", evennum,"even numbers")
+print("there are", oddnumb, "odd numbers")
