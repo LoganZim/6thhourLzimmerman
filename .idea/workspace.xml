@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added scenario 5" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added scenario 5">
+      <change afterPath="$PROJECT_DIR$/HW15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,40 +45,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
-    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Scenario_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
-    &quot;Python.i.executor&quot;: &quot;Run&quot;,
-    &quot;Python.myFunFile.executor&quot;: &quot;Run&quot;,
-    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
-    &quot;Python.playground2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.random.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scen3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scenario1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scenario2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testingPY.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.HW1.executor": "Run",
+    "Python.HW10.executor": "Run",
+    "Python.HW11.executor": "Run",
+    "Python.HW12.executor": "Run",
+    "Python.HW13.executor": "Run",
+    "Python.HW14.executor": "Run",
+    "Python.HW15.executor": "Run",
+    "Python.HW2.executor": "Run",
+    "Python.HW3.executor": "Run",
+    "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
+    "Python.HW6.executor": "Run",
+    "Python.HW7.executor": "Run",
+    "Python.HW8.executor": "Run",
+    "Python.HW9.executor": "Run",
+    "Python.Scenario 4.executor": "Run",
+    "Python.Scenario3.executor": "Run",
+    "Python.Scenario5.executor": "Run",
+    "Python.Scenario_3.executor": "Run",
+    "Python._pydev_execfile.executor": "Run",
+    "Python.i.executor": "Run",
+    "Python.myFunFile.executor": "Run",
+    "Python.playground.executor": "Run",
+    "Python.playground2.executor": "Run",
+    "Python.random.executor": "Run",
+    "Python.scen3.executor": "Run",
+    "Python.scenario1.executor": "Run",
+    "Python.scenario2.executor": "Run",
+    "Python.testingPY.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -252,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733859992089</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added scenario 5">
+      <option name="closed" value="true" />
+      <created>1733860519698</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1733860519698</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
