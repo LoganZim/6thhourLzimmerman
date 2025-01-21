@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW15">
-      <change afterPath="$PROJECT_DIR$/HW16.py" afterDir="false" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW16">
+      <change afterPath="$PROJECT_DIR$/HW17.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW15.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW15.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
     "Python.HW14.executor": "Run",
     "Python.HW15.executor": "Run",
     "Python.HW16.executor": "Run",
+    "Python.HW17.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
@@ -274,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736884469232</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added HW16">
+      <option name="closed" value="true" />
+      <created>1736969799113</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736969799113</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -295,6 +303,7 @@
     <MESSAGE value="added scenario 4" />
     <MESSAGE value="added scenario 5" />
     <MESSAGE value="added HW15" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW15" />
+    <MESSAGE value="added HW16" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW16" />
   </component>
 </project>
