@@ -31,7 +31,3 @@ def loop(*l):
 
 
 #5. Call all of the functions created in 1 - 4 with relevant arguments.
-hello_world()
-avr()
-animal('monkey', 'bird', 'dog','cat','owl')
-loop(5)
