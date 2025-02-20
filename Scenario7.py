@@ -9,8 +9,7 @@ listAverage = 0
 
 def final_average():
     global listAverage
-    listAverage = (stats[5]+stats[4]+stats[3]+stats[2]+stats[1]+stats[0])
-    listAverage = listAverage//6
+    listAverage = (stats[5]+stats[4]+stats[3]+stats[2]+stats[1]+stats[0])//6
     return listAverage
 
 final_average()
