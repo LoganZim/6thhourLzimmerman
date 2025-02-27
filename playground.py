@@ -1,81 +1,56 @@
 #logan zimmerman
 #6 hour
 #playground
+import random
 
-
-print('hello world! ')
-
-
-
-
-
-
-#intro
-print('you are going to put in what simple equation you want to use then you can plug in the numbers you want to use')
-
-#variables
-s=(input('enter the kind of problem you want to do (addition,subtraction,multiplication, or division): '))
-
-#addition
-if s==('addition'):
-    f=int(input('ok, what is the first number you want to add: '))
-    d=int(input('now what is your second number: '))
-    g=input('do you want to add a third number: ')
-
-
-    list1 = [f,d]
-    if g==('yes'):
-        y=int(input('ok what is the 3rd number you want to add: '))
-        list1.append(y)
-        print('ok, your answer is: ', list1[0]+list1[1]+list1[2])
+s=1
+def highOrLow():
+    global s
+    x = random.randint(1, 100)
+    y=0
+    print('\nYou will be playing a lottery number game.\n\nIf you pick the right number you will get',s,'M in cash.\n\nIf wrong you go home.\n')
+    print('Ok, i am thinking of a number in my head and you will have 5 attempts to guess that number out of 100 and i will help you by telling you higher or lower.\n')
+    while y < 4:
+        z=int(input('enter a number: '))
+        if z < x:
+            print('higher')
+        elif z > x:
+            print('lower')
+        else:
+            print('you guessed it, you won',s,'M')
+            t = input('\ndo you want to double or nothing: ')
+            if t == 'yes':
+                s*=2
+                highOrLow()
+            if t == 'no':
+                print('have fun with your money then')
+                exit()
+            exit()
+        y += 1
+    w=int(input('Ok, you are on to your last guess, what will it be: '))
+    if w < x:
+        print('ooo! the number was',x,)
+        p = input('do you want to try again(yes or no): ')
+        if p == 'yes':
+            highOrLow()
+        if p == 'no':
+            print('ok')
+            exit()
+    elif w > x:
+        print('ooo! the number was', x)
+        p=input('do you want to try again(yes or no): ')
+        if p == 'yes':
+            highOrLow()
+        if p == 'no':
+            print('ok')
+            exit()
     else:
-        print('ok')
-        print('your answer is: ', list1[0] + list1[1])
-
-#subtracton
-if s==('subtraction'):
-    f = int(input('ok, what is the first number you want to subtract: '))
-    d = int(input('now what is your second number: '))
-    g = input('do you want to subtract those two by a third number: ')
-
-    list1 = [f, d]
-    if g == ('yes'):
-        y = int(input('ok what is the 3rd number you want to use: '))
-        list1.append(y)
-        print('ok, your answer is: ', list1[0] - list1[1] - list1[2])
-    else:
-        print('ok')
-        print('your answer is: ', list1[0] - list1[1])
-
-#multiplication
-if s==('multiplication'):
-    f = float(int(input('ok, what is the first number you want to multiply: ')))
-    d = float(int(input('now what is your second number: ')))
-    g = input('do you want to multiply those two by a third number: ')
-
-    list1 = [f, d]
-    if g == ('yes'):
-        y = int(input('ok what is the 3rd number you want to use: '))
-        list1.append(y)
-        print('ok, your answer is: ', list1[0] * list1[1] * list1[2])
-    else:
-        print('ok')
-        print('your answer is: ', list1[0] * list1[1])
-
-#division
-if s==('division'):
-    f = float(int(input('ok, what is the first number you want to divide with: ')))
-    d = float(int(input('now what is your second number: ')))
-    g = input('do you want to divide those two by a third number: ')
-
-    list1 = [f, d]
-    if g == ('yes'):
-        y = int(input('ok what is the 3rd number you want to use: '))
-        list1.append(y)
-        print('ok, your answer is: ', list1[0] / list1[1] / list1[2])
-    else:
-        print('ok')
-        print('your answer is: ', list1[0] / list1[1])
-
-
-
+        print('you guessed it, you won',s,'M')
+        t=input('\ndo you want to double or nothing: ')
+        if t == 'yes':
+            s*=2
+            highOrLow()
+        if t == 'no':
+            print('have fun with your money then')
+            exit()
+highOrLow()
