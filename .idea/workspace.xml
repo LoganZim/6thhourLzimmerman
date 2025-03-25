@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW22">
-      <change afterPath="$PROJECT_DIR$/HW23.py" afterDir="false" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW23">
+      <change afterPath="$PROJECT_DIR$/Scenerio8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +77,7 @@
     "Python.Scenario6.executor": "Run",
     "Python.Scenario7.executor": "Run",
     "Python.Scenario_3.executor": "Run",
+    "Python.Scenerio8.executor": "Run",
     "Python._pydev_execfile.executor": "Run",
     "Python.i.executor": "Run",
     "Python.myFunFile.executor": "Run",
@@ -348,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741291023040</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added HW23">
+      <option name="closed" value="true" />
+      <created>1741719453050</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1741719453050</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -376,6 +385,7 @@
     <MESSAGE value="added Scenario6/Scenario7" />
     <MESSAGE value="added HW21" />
     <MESSAGE value="added HW22" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW22" />
+    <MESSAGE value="added HW23" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW23" />
   </component>
 </project>
