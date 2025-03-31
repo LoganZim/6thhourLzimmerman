@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW23">
-      <change afterPath="$PROJECT_DIR$/Scenerio8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added Scenario 8">
+      <change afterPath="$PROJECT_DIR$/HW24.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,7 @@
     "Python.HW21.executor": "Run",
     "Python.HW22.executor": "Run",
     "Python.HW23.executor": "Run",
+    "Python.HW24.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
     "Python.HW5.executor": "Run",
@@ -357,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1741719453050</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added Scenario 8">
+      <option name="closed" value="true" />
+      <created>1742927543890</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1742927543890</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added hw1" />
     <MESSAGE value="added hw2" />
     <MESSAGE value="added HW3" />
     <MESSAGE value="added HW4" />
@@ -386,6 +393,7 @@
     <MESSAGE value="added HW21" />
     <MESSAGE value="added HW22" />
     <MESSAGE value="added HW23" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW23" />
+    <MESSAGE value="added Scenario 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Scenario 8" />
   </component>
 </project>
