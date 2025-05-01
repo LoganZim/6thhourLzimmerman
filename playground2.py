@@ -1,3 +1,4 @@
+
 def w(msg):
     while True:
         try:
@@ -10,16 +11,13 @@ def w(msg):
 
 
 print('Enter 1 for black jack\n')
-print('Enter 2 for tic tac toe')
+print('Enter 2 for poker')
 
 choice = w('enter choice: ')
 
 while True:
     if choice==1:
-        '''
-               Blackjack
-               -------------------------------------------------------------
-               '''
+
 
         import random
         import os
@@ -324,14 +322,20 @@ while True:
         if __name__ == '__main__':
             deck = init_deck()
             play_blackjack(deck)
-    if choice==2:
-        g=input('''          |      |    
-                             |      |
-                       ______|______|______
-                             |      |
-                             |      |
-                       ------|------|------
-                             |      |
-                             |      |
 
-                                                         ''')
+    if choice == 2:
+        import random
+        cards=['Ace',2,3,4,5,6,7,8,9,10,'Jack','Queen','King']
+        suits=['Hearts','Diamonds','Spades','Clubs']
+        def deal():
+
+        def bet():
+
+        def round():
+
+        def river():
+
+        def final_bet():
+
+        def winner():
+
