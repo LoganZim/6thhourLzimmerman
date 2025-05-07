@@ -1,337 +1,193 @@
-def w(msg):
-    while True:
-        try:
+import random
+import time
 
-            return int(input(msg))
+balance = 1000
+pot = 0
+faces = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+suits = ["\u2664", "\u2661", "\u2662", "\u2667"]
+deck = []
+table = []
+hand = []
 
-        except ValueError:
+for i in range(0, len(faces)):
+    for j in range(0, len(suits)):
+        card = (faces[i], suits[j])
+        deck.append(card)
+random.shuffle(deck)
 
-            print('nuh uh')
+print('This poker game isnt multiplayer but the better hand you get gets you more \n '
+      'money and your goal is to make the most money you can and whatever you bet you get more back depending on the strength of your hand\n'
+      'but if your hand isnt good you lose money\n')
 
-
-print('Enter 1 for black jack\n')
-print('Enter 2 for tic tac toe')
-
-choice = w('enter choice: ')
 
 while True:
-    if choice==1:
-        '''
-               Blackjack
-               -------------------------------------------------------------
-               '''
+    if balance <= 0:
+        break
 
-        import random
-        import os
+    def draw():
+        global hand
+        draw1 = deck[0]
+        deck.remove(draw1)
+        hand.append(draw1)
+
+        draw2 = deck[0]
+        deck.remove(draw2)
+        hand.append(draw2)
+
+        time.sleep(6)
+        print('you drew a(n)', draw1, 'and a(n)', draw2)
+
+        print(hand)
+        print()
+        time.sleep(2)
 
 
-        class Card:
+    def bet_1():
+        global pot
+        global balance
 
-            def __init__(self, card_face, value, symbol):
-                self.card_face = card_face
-                self.value = value
-                self.symbol = symbol
+        print('Your balance is', balance)
+        bet1 = int(input('How much do you want to bet: '))
+        if bet1 > balance:
+            print('Cant bet more than what you have')
+            bet_1()
+        elif bet1 < 0:
+            print('Cant bet less that 0')
+            bet_1()
+        else:
+            pot += bet1
+            balance -= bet1
+            print(' The pot is now', pot)
+            print()
+            time.sleep(2)
 
 
-        def show_cards(cards, hidden):
-            s = ''
-            for card in cards:
-                s = s + '\t ________________'
-            if hidden:
-                s += '\t ________________'
-            print(s)
+    def flop():
+        global hand
+        global table
 
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|                |'
-            print(s)
+        print('"hand reminder"', hand)
+        print()
+        time.sleep(2)
 
-            s = ''
-            for card in cards:
-                if card.card_face in ['J', 'Q', 'K', 'A']:
-                    s = s + '\t|  {}             |'.format(card.card_face)
-                elif card.value == 10:
-                    s = s + '\t|  {}            |'.format(card.value)
-                else:
-                    s = s + '\t|  {}             |'.format(card.value)
+        flop1 = deck[0]
+        deck.remove(flop1)
+        table.append(flop1)
 
-            if hidden:
-                s += '\t|                |'
-            print(s)
+        flop2 = deck[0]
+        deck.remove(flop2)
+        table.append(flop2)
 
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|      * *       |'
-            print(s)
+        flop3 = deck[0]
+        deck.remove(flop3)
+        table.append(flop3)
 
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|    *     *     |'
-            print(s)
+        print('The flop begins\n')
+        time.sleep(2)
+        print('The flop contains a(n)', flop1, 'a(n)', flop2, 'and a(n)', flop3)
+        time.sleep(2)
+        print('The table contains', table)
+        time.sleep(3)
 
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|   *       *    |'
-            print(s)
 
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|   *       *    |'
-            print(s)
+    def bet_2():
+        global pot
+        global balance
 
-            s = ''
-            for card in cards:
-                s = s + '\t|       {}        |'.format(card.symbol)
-            if hidden:
-                s += '\t|          *     |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|         *      |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|        *       |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|                |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                s = s + '\t|                |'
-            if hidden:
-                s += '\t|                |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                if card.card_face in ['J', 'Q', 'K', 'A']:
-                    s = s + '\t|            {}   |'.format(card.card_face)
-                elif card.value == 10:
-                    s = s + '\t|           {}   |'.format(card.value)
-                else:
-                    s = s + '\t|            {}   |'.format(card.value)
-            if hidden:
-                s += '\t|        *       |'
-            print(s)
-
-            s = ''
-            for card in cards:
-                s = s + '\t|________________|'
-            if hidden:
-                s += '\t|________________|'
-            print(s)
+        print('Your balance is', balance)
+        bet2 = int(input('How much do you want to bet: '))
+        if bet2 > balance:
+            print('Cant bet more than what you have')
+            bet_1()
+        elif bet2 < 0:
+            print('Cant bet less that 0')
+            bet_1()
+        else:
+            pot += bet2
+            balance -= bet2
+            print(' The pot is now', pot)
             print()
 
 
-        def deal_card(deck):
-            card = random.choice(deck)
-            deck.remove(card)
-            return card, deck
+    def turn():
+        global hand
+        global table
+
+        print('"hand reminder"', hand)
+        print()
+        time.sleep(2)
+
+        turn1 = deck[0]
+        deck.remove(turn1)
+        table.append(turn1)
+
+        print('The turn begins\n')
+        time.sleep(2)
+        print('The turn contains a(n)', turn1)
+        time.sleep(3)
+        print('the table contains', table)
+        time.sleep(3)
 
 
-        def play_blackjack(deck):
-            player_cards = []
-            dealer_cards = []
-            player_score = 0
-            dealer_score = 0
-            os.system('clear')
+    def river():
+        global hand
+        global table
 
-            while len(player_cards) < 2:
-                player_card, deck = deal_card(deck)
-                player_cards.append(player_card)
-                player_score += player_card.value
+        print('"Hand reminder"', hand)
+        print()
+        time.sleep(2)
 
-                # If dealt a second Ace, adjust player score
-                if len(player_cards) == 2:
-                    if player_cards[0].value == 11 and player_cards[1].value == 11:
-                        player_cards[0].value = 1
-                        player_score -= 10
+        river1 = deck[0]
+        deck.remove(river1)
+        table.append(river1)
 
-                print('PLAYER CARDS: ')
-                show_cards(player_cards, False)
-                print('PLAYER SCORE = ', player_score)
+        print('The river begins\n')
+        time.sleep(2)
+        print('The river contains a(n)', river1)
+        time.sleep(3)
+        print('the table contains', table)
 
-                input('Continue...')
 
-                dealer_card, deck = deal_card(deck)
-                dealer_cards.append(dealer_card)
-                dealer_score += dealer_card.value
+    def three_of_a_kind():
+        print()
 
-                # If dealt a second Ace, adjust dealer score
-                # Note: adjusts 2nd card to hide that the dealer has an Ace
-                if len(dealer_cards) == 2:
-                    if dealer_cards[0].value == 11 and dealer_cards[1].value == 11:
-                        dealer_cards[1].value = 1
-                        dealer_score -= 10
 
-                print('DEALER CARDS: ')
-                if len(dealer_cards) == 1:
-                    show_cards(dealer_cards, False)
-                    print('DEALER SCORE = ', dealer_score)
-                else:
-                    show_cards(dealer_cards[:-1], True)
-                    print('DEALER SCORE = ', dealer_score - dealer_cards[-1].value)
+    def pair():
+        global hand, table, pot, balance
 
-                input('Continue...')
+        for i in range(5):
+            if hand[0][0] == table[i][0]:
+                print(f"You get 50% back with a pair of {hand[0][0]}'s")
+                balance += pot/2
+                break
+            elif hand[1][0] == table[i][0]:
+                print(f"You get 50% back with a pair of {hand[1][0]}'s")
+                balance += pot/2
+                break
 
-            if player_score == 21:
-                print('PLAYER HAS A BLACKJACK!!!!')
-                print('PLAYER WINS!!!!')
-                quit()
-            os.system('clear')
-
-            print('DEALER CARDS: ')
-            show_cards(dealer_cards[:-1], True)
-            print('DEALER SCORE = ', dealer_score - dealer_cards[-1].value)
-            print()
-            print('PLAYER CARDS: ')
-            show_cards(player_cards, False)
-            print('PLAYER SCORE = ', player_score)
-
-            while player_score < 21:
-                choice = input('Enter H to Hit or S to Stand: ').upper()
-                if len(choice) != 1 or (choice not in ['H', 'S']):
-                    os.system('clear')
-                    print('Invalid choice!! Try Again...')
-                    continue
-
-                if choice.upper() == 'S':
-                    break
-                else:
-                    player_card, deck = deal_card(deck)
-                    player_cards.append(player_card)
-                    player_score += player_card.value
-                    card_pos = 0
-
-                    # If dealt an Ace, adjust score for each existing Ace in hand
-                    while player_score > 21 and card_pos < len(player_cards):
-                        if player_cards[card_pos].value == 11:
-                            player_cards[card_pos].value = 1
-                            player_score -= 10
-                            card_pos += 1
-                        else:
-                            card_pos += 1
-
-                    if player_score > 21:
+            if hand[0][0] == hand[1][0]:
+                print(f"You get 50% back with a pair of {hand[0][0]}'s")
+                balance += pot/2
+                break
+            for k in range(5):
+                for o in range(k + 1, 5):
+                    if table[k][0] == table[o][0]:
+                        print(f"There is a pair of {table[k][0]}'s")
                         break
 
-                    os.system('clear')
-                    print('DEALER CARDS: ')
-                    show_cards(dealer_cards[:-1], True)
-                    print('DEALER SCORE = ', dealer_score - dealer_cards[-1].value)
-                    print()
-                    print('PLAYER CARDS: ')
-                    show_cards(player_cards, False)
-                    print('PLAYER SCORE = ', player_score)
-
-            os.system('clear')
-            print('PLAYER CARDS: ')
-            show_cards(player_cards, False)
-            print('PLAYER SCORE = ', player_score)
-            print()
-            print('DEALER IS REVEALING THEIR CARDS....')
-            print('DEALER CARDS: ')
-            show_cards(dealer_cards, False)
-            print('DEALER SCORE = ', dealer_score)
-
-            if player_score == 21:
-                print('PLAYER HAS A BLACKJACK, PLAYER WINS!!!')
-                quit()
-
-            if player_score > 21:
-                print('PLAYER BUSTED!!! GAME OVER!!!')
-                quit()
-
-            input('Continue...')
-            while dealer_score < 17:
-                os.system('clear')
-                print('DEALER DECIDES TO HIT.....')
-                dealer_card, deck = deal_card(deck)
-                dealer_cards.append(dealer_card)
-                dealer_score += dealer_card.value
-
-                # If dealt an Ace, adjust score for each existing Ace in hand
-                card_pos = 0
-                while dealer_score > 21 and card_pos < len(dealer_cards):
-                    if dealer_cards[card_pos].value == 11:
-                        dealer_cards[card_pos].value = 1
-                        dealer_score -= 10
-                        card_pos += 1
-                    else:
-                        card_pos += 1
-
-                print('PLAYER CARDS: ')
-                show_cards(player_cards, False)
-                print('PLAYER SCORE = ', player_score)
-                print()
-                print('DEALER CARDS: ')
-                show_cards(dealer_cards, False)
-                print('DEALER SCORE = ', dealer_score)
-                if dealer_score > 21:
-                    break
-                input('Continue...')
-
-            if dealer_score > 21:
-                print('DEALER BUSTED!!! YOU WIN!!!')
-                quit()
-            elif dealer_score == 21:
-                print('DEALER HAS A BLACKJACK!!! PLAYER LOSES!!!')
-                quit()
-            elif dealer_score == player_score:
-                print('TIE GAME!!!!')
-            elif player_score > dealer_score:
-                print('PLAYER WINS!!!')
-            else:
-                print('DEALER WINS!!!')
 
 
-        def init_deck():
-            suits = ['Spades', 'Hearts', 'Clubs', 'Diamonds']
-            # UNICODE values for card symbol images
-            suit_symbols = {'Hearts': '\u2661', 'Diamonds': '\u2662',
-                            'Spades': '\u2664', 'Clubs': '\u2667'}
-            cards = {'A': 11, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6,
-                     '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10}
-            deck = []
-            for suit in suits:
-                for card, value in cards.items():
-                    deck.append(Card(card, value, suit_symbols[suit]))
-            return deck
 
 
-        if __name__ == '__main__':
-            deck = init_deck()
-            play_blackjack(deck)
-    if choice==2:
-        g=input('''          |      |    
-                             |      |
-                       ______|______|______
-                             |      |
-                             |      |
-                       ------|------|------
-                             |      |
-                             |      |
 
-                                                         ''')
+
+
+    draw()
+    flop()
+    bet_1()
+    turn()
+    bet_2()
+    river()
+
+    three_of_a_kind()
+    pair()
