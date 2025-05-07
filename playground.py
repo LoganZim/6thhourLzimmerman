@@ -627,167 +627,60 @@ while True:
             deck = init_deck()
             play_blackjack(deck)
     elif choice == 17:
+
         import random
         import time
 
-        balance = 1000
-        pot = 0
-        faces = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-        face_values = {face: i for i, face in enumerate(faces, start=2)}
-        suits = ["♠", "♡", "♢", "♣"]
-        deck = []
-        table = []
-        hand = []
+        balance=1000
+        pot=0
+        score = ""
+        deck = ['ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'ace', 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                'Jack', 'Queen', 'King', 'ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'ace', 2, 3,
+                4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King']
+        random.shuffle(deck)
 
-
-        def create_deck():
-            global deck
-            deck = [(face, suit) for face in faces for suit in suits]
-            random.shuffle(deck)
+        print('this poker game isnt multiplayer but the better hand you get gets you more \n '
+              'points and your goal is to make a high score and whatever you bet you get more back depending on the strength of your hand\n'
+              'but if your hand isnt good you lose money\n')
+        time.sleep(4)
 
 
         def draw():
-            global hand
-            hand = [deck.pop(0), deck.pop(0)]
-            print(f"You drew: {hand[0]} and {hand[1]}")
+            global balance
+            draw1 = deck[0]
+            deck.remove(draw1)
+
+            draw2 = deck[0]
+            deck.remove(draw2)
+
+            print('you drew a(n)', draw1,'and a(n)',draw2)
+            hand = draw1 and draw2
+            time.sleep(2)
+
+        def bet_1():
+            print('your balance is', balance)
+            bet1 = int(input('how much do you want to bet: '))
+            if bet1 > balance:
+                print('cant bet more than what you have')
+                bet_1()
+            elif bet1 < 0:
+                print('cant bet less that 0')
+                bet_1()
+
+
+    def flop():
+            flop1=deck[0]
+            deck.remove(flop1)
+
+            flop2=deck[0]
+            deck.remove(flop2)
+
+            flop3=deck[0]
+            deck.remove(flop3)
+
+            print('the flop begins\n')
             time.sleep(1)
+            print('the flop contains a(n)',flop1,'a(n)',flop2,'and a(n)',flop3)
 
 
-        def bet_input():
-            global balance, pot
-            while True:
-                try:
-                    print(f"Your balance: {balance}")
-                    amount = int(input("Enter your bet: "))
-                    if amount < 0 or amount > balance:
-                        print("Invalid bet.")
-                    else:
-                        balance -= amount
-                        pot += amount
-                        print(f"Pot is now {pot}\n")
-                        return
-                except ValueError:
-                    print("Please enter a valid number.")
-
-
-        def flop():
-            global table
-            print("\nDealing the flop...")
-            time.sleep(1)
-            table.extend([deck.pop(0) for _ in range(3)])
-            print(f"Flop: {table}\n")
-            time.sleep(1)
-
-
-        def turn():
-            print("Dealing the turn...")
-            time.sleep(1)
-            table.append(deck.pop(0))
-            print(f"Turn: {table[-1]}")
-            print(f"Table: {table}\n")
-            time.sleep(1)
-
-
-        def river():
-            print("Dealing the river...")
-            time.sleep(1)
-            table.append(deck.pop(0))
-            print(f"River: {table[-1]}")
-            print(f"Table: {table}\n")
-            time.sleep(1)
-
-
-        def evaluate_hand():
-            global balance, pot
-            all_cards = hand + table
-            ranks = [card[0] for card in all_cards]
-            suits_ = [card[1] for card in all_cards]
-            rank_counts = {rank: ranks.count(rank) for rank in set(ranks)}
-            suit_counts = {suit: suits_.count(suit) for suit in set(suits_)}
-            values = sorted([face_values[r] for r in ranks], reverse=True)
-            unique_vals = sorted(set(values), reverse=True)
-
-            # Helper functions
-            def is_flush():
-                for suit in suits_:
-                    if suits_.count(suit) >= 5:
-                        return suit
-                return None
-
-            def is_straight(vals):
-                vals = sorted(set(vals), reverse=True)
-                for i in range(len(vals) - 4):
-                    if vals[i] - vals[i + 4] == 4:
-                        return vals[i]
-                if set([14, 2, 3, 4, 5]).issubset(set(vals)):
-                    return 5  # Wheel straight (A-2-3-4-5)
-                return None
-
-            def is_straight_flush():
-                flush_suit = is_flush()
-                if not flush_suit:
-                    return None
-                suited_cards = [card for card in all_cards if card[1] == flush_suit]
-                suited_vals = sorted([face_values[card[0]] for card in suited_cards], reverse=True)
-                high = is_straight(suited_vals)
-                if high:
-                    return high
-                return None
-
-            # Evaluation
-            straight_flush_high = is_straight_flush()
-            four_kind = 4 in rank_counts.values()
-            three_kind = 3 in rank_counts.values()
-            pairs = list(rank_counts.values()).count(2)
-            flush = is_flush()
-            straight = is_straight(values)
-
-            # Determine hand type
-            if straight_flush_high == 14:  # A-high straight flush
-                hand_type, rank_value = "Royal Flush", 10
-            elif straight_flush_high:
-                hand_type, rank_value = "Straight Flush", 9
-            elif four_kind:
-                hand_type, rank_value = "Four of a Kind", 8
-            elif three_kind and pairs >= 1:
-                hand_type, rank_value = "Full House", 7
-            elif flush:
-                hand_type, rank_value = "Flush", 6
-            elif straight:
-                hand_type, rank_value = "Straight", 5
-            elif three_kind:
-                hand_type, rank_value = "Three of a Kind", 4
-            elif pairs >= 2:
-                hand_type, rank_value = "Two Pair", 3
-            elif pairs == 1:
-                hand_type, rank_value = "Pair", 2
-            else:
-                hand_type, rank_value = "High Card", 1
-
-            # Payout multiplier per hand
-            payout_multiplier = {
-                10: 10,  # Royal Flush
-                9: 8,  # Straight Flush
-                8: 7,  # Four of a Kind
-                7: 6,  # Full House
-                6: 5,  # Flush
-                5: 4,  # Straight
-                4: 3,  # Three of a Kind
-                3: 2,  # Two Pair
-                2: 1.5,  # Pair
-                1: 0  # High Card
-            }[rank_value]
-
-            winnings = pot * payout_multiplier
-            balance += winnings
-            print(f"\n==> You got a **{hand_type}**!")
-            print(f"==> You won ${winnings:.2f}!")
-            print(f"Your new balance: ${balance:.2f}\n")
-
-    create_deck()
-    draw()
-    bet_input()
-    flop()
-    turn()
-    river()
-    evaluate_hand()
+        draw()
