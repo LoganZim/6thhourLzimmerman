@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added HW25">
+    <list default="true" id="3a774aef-44e2-4019-8aaf-c9f5f69f51a2" name="Changes" comment="added playground">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI Playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI Playground.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playground2.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +30,12 @@
     &quot;assignee&quot;: &quot;LoganZim&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/LoganZim/6thhourLzimmerman.git&quot;,
-    &quot;accountId&quot;: &quot;d47647bf-f7ad-4607-bac2-09e1ab23ba1a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/LoganZim/6thhourLzimmerman.git",
+    "accountId": "f5daddbc-34c3-4f28-a73c-db7cc810b19b"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -100,7 +98,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ce3d9afa04ac-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.347" />
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
       </set>
     </attachedChunks>
   </component>
@@ -377,11 +375,18 @@
       <option name="project" value="LOCAL" />
       <updated>1743619084579</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added playground">
+      <option name="closed" value="true" />
+      <created>1746650412668</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1746650412668</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added HW3" />
     <MESSAGE value="added HW4" />
     <MESSAGE value="added scenario1" />
     <MESSAGE value="added scenario2" />
@@ -406,6 +411,7 @@
     <MESSAGE value="added HW23" />
     <MESSAGE value="added Scenario 8" />
     <MESSAGE value="added HW25" />
-    <option name="LAST_COMMIT_MESSAGE" value="added HW25" />
+    <MESSAGE value="added playground" />
+    <option name="LAST_COMMIT_MESSAGE" value="added playground" />
   </component>
 </project>
