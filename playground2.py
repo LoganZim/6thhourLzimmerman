@@ -65,7 +65,6 @@ while True:
             print()
             time.sleep(2)
 
-
     def flop():
         global hand
         global table
@@ -93,7 +92,6 @@ while True:
         print('The table contains', table)
         time.sleep(3)
 
-
     def turn():
         global hand
         global table
@@ -113,7 +111,6 @@ while True:
         print('the table contains', table)
         time.sleep(3)
 
-
     def river():
         global hand
         global table
@@ -132,10 +129,46 @@ while True:
         time.sleep(3)
         print('the table contains', table)
 
-
-    def three_of_a_kind():
+    def royal_flush():
         print()
 
+    def straight_flush():
+        print()
+
+    def four_of_a_kind():
+        print()
+
+    def full_house():
+        print()
+
+    def flush():
+        print()
+
+    def straight():
+        print()
+
+    def three_of_a_kind():
+        global hand, table, pot, balance, break1
+
+        all_cards = hand + table
+        break1 = 0
+
+        for i in range(len(all_cards)):
+            count = 0
+            for j in range(len(all_cards)):
+                if all_cards[i][0] == all_cards[j][0]:
+                    count += 1
+            if count == 3:
+                print(f"You got three of a kind in {all_cards[i][0]}'s! You win the full pot!")
+                balance += pot
+                break1 = 1
+                break
+
+        if break1 == 0:
+            two_pair()
+
+    def two_pair():
+        print()
 
     def pair():
         global hand, table, pot, balance, break1
@@ -161,6 +194,9 @@ while True:
                         break
             if break1 == 1:
                 break
+            if break1==2:
+                print('you had nothing and lose all of your bets')
+
         time.sleep(2)
         print('Next round')
 
@@ -178,5 +214,4 @@ while True:
     river()
 
     three_of_a_kind()
-    pair()
 
